@@ -3,11 +3,14 @@ import Logo from '../assets/deviklogo.png';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa/';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   const handleClick = () => setShowNav(!showNav);
+
+  const activeStyle = 'text-pink-600 font-bold';
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-8 bg-slate-800 shadow-xl'>
@@ -17,29 +20,44 @@ const Navbar = () => {
 
       <ul className='hidden md:flex'>
         <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link to='home' smooth={true} duration={500}>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            to='/home'
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link to='about' smooth={true} duration={500}>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            to='/about'
+          >
             About
-          </Link>
+          </NavLink>
         </li>
         <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link to='projects' smooth={true} duration={500}>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            to='/projects'
+          >
             Projects
-          </Link>
+          </NavLink>
         </li>
         <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link to='skills' smooth={true} duration={500}>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            to='/skills'
+          >
             Skills
-          </Link>
+          </NavLink>
         </li>
         <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link to='contact' smooth={true} duration={500}>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            to='/contact'
+          >
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
 
@@ -55,34 +73,49 @@ const Navbar = () => {
         }
       >
         <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={handleClick}
-            to='projects'
-            smooth={true}
-            duration={500}
+            to='/home'
+          >
+            Home
+          </NavLink>
+        </li>
+        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            onClick={handleClick}
+            to='/about'
+          >
+            About
+          </NavLink>
+        </li>
+        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            onClick={handleClick}
+            to='/projects'
           >
             Projects
-          </Link>
+          </NavLink>
         </li>
         <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            onClick={handleClick}
+            to='/skills'
+          >
             Skills
-          </Link>
+          </NavLink>
         </li>
         <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeStyle : undefined)}
+            onClick={handleClick}
+            to='/contact'
+          >
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
@@ -93,7 +126,7 @@ const Navbar = () => {
           >
             <a
               className='flex justify-between items-center w-full text-gray-200 '
-              href='/'
+              href='http://www.linkedin.com/in/bevik'
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
@@ -101,7 +134,7 @@ const Navbar = () => {
           <li className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300 bg-[#333333]'>
             <a
               className='flex justify-between items-center w-full text-gray-200 '
-              href='/'
+              href='https://github.com/syzgod'
             >
               GitHub <FaGithub size={30} />
             </a>
@@ -109,7 +142,7 @@ const Navbar = () => {
           <li className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300 bg-red-400'>
             <a
               className='flex justify-between items-center w-full text-gray-200 '
-              href='/'
+              href='mailto: viktorberczeli@dev-vik.tech'
             >
               Email <HiOutlineMail size={30} />
             </a>

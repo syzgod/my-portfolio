@@ -1,7 +1,14 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const navigateHandler = () => {
+    navigate('/projects');
+  };
+
   return (
     <div name='home' className='w-full h-screen bg-slate-800'>
       <div className='max-w-[950px] mx-auto px-8 flex flex-col justify-center h-full'>
@@ -20,12 +27,15 @@ const Home = () => {
           stunning web applications.
         </p>
         <div>
-          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+          <Link
+            to='/projects'
+            className='text-white group border-2 px-6 py-3 my-2 inline-flex items-center hover:bg-pink-600 hover:border-pink-600'
+          >
             View my works
             <span className='group-hover:rotate-90 duration-300 ml-3'>
               <HiArrowNarrowRight />
             </span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

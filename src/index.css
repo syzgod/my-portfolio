@@ -30,3 +30,7 @@
     hsla(242, 74%, 61%, 0.8)
   ) !important;
 }
+
+.list .a:active {
+  border-bottom: 2px solid rgb(219 39 119);
+}
