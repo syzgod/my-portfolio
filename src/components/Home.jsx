@@ -10,8 +10,8 @@ const Home = () => {
   };
 
   return (
-    <div name='home' className='w-full h-screen bg-slate-800'>
-      <div className='max-w-[950px] mx-auto px-8 flex flex-col justify-center h-full'>
+    <div name='home' className='min-h-screen bg-slate-800'>
+      <div className='max-w-[950px] mx-auto p-8 pt-36 flex flex-col justify-center'>
         <p className='text-xl text-pink-600'>Hi, my name is</p>
         <h1 className='text-4xl sm:text-7xl font-bold text-gray-200'>
           Viktor Berczeli
@@ -19,7 +19,7 @@ const Home = () => {
         <h2 className='text-4xl sm:text-7xl font-bold text-gray-400'>
           I'm a Front-End Developer.
         </h2>
-        <p className='text-gray-400 py-4 max-w-[700]'>
+        <p className='text-gray-400 py-4 max-w-[700] '>
           I am a skilled React developer with experience in designing and
           implementing user interfaces for web applications. I have a solid
           understanding of modern web technologies and best practices. I am a

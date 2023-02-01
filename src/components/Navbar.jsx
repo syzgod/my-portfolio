@@ -18,6 +18,8 @@ const Navbar = () => {
         <img src={Logo} alt='logo' style={{ width: '100px' }} />
       </div>
 
+      {/* Top Navigation */}
+
       <ul className='hidden md:flex'>
         <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
           <NavLink
@@ -65,14 +67,16 @@ const Navbar = () => {
         {!showNav ? <FaBars size={30} /> : <FaTimes size={30} />}
       </div>
 
+      {/* Hamburger menu */}
+
       <ul
         className={
           !showNav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-slate-800 flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full h-screen overflow-scroll bg-slate-800 flex flex-col justify-center items-center'
         }
       >
-        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={handleClick}
@@ -81,7 +85,7 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={handleClick}
@@ -90,7 +94,7 @@ const Navbar = () => {
             About
           </NavLink>
         </li>
-        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={handleClick}
@@ -99,7 +103,7 @@ const Navbar = () => {
             Projects
           </NavLink>
         </li>
-        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={handleClick}
@@ -108,7 +112,7 @@ const Navbar = () => {
             Skills
           </NavLink>
         </li>
-        <li className='py-6 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={handleClick}
@@ -118,11 +122,14 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
+
+      {/* Contact sidebar */}
+
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li
             className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300
-          bg-[#0072b1]'
+          bg-linkedin'
           >
             <a
               className='flex justify-between items-center w-full text-gray-200 '
@@ -131,7 +138,7 @@ const Navbar = () => {
               LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+          <li className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300 bg-github'>
             <a
               className='flex justify-between items-center w-full text-gray-200 '
               href='https://github.com/syzgod'

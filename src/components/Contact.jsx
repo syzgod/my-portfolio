@@ -1,19 +1,36 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Contact = () => {
+  const formRef = useRef();
+
+  const resetFormHandleClick = (e) => {
+    e.preventDefault();
+    formRef.current.reset();
+  };
+
   return (
     <div
       name='contact'
-      className='w-full h-screen bg-slate-800 flex justify-center items-center p-4'
+      className='w-full min-h-screen px-8 bg-slate-800 flex justify-center pt-24'
     >
-      <form action='' className='flex flex-col max-w-[600px] w-full'>
+      <form
+        ref={formRef}
+        action='https://getform.io/f/f51a54d9-2a95-4c81-8590-7b6ea5fb38c3'
+        method='POST'
+        className='flex flex-col max-w-[600px] w-full'
+      >
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300'>
             Contact
           </p>
           <p className='text-gray-300 py-4'>
-            Submit the form below or send me an email:{' '}
-            <span className='text-pink-600'>vikberczeli@gmail.com</span>
+            Submit the form below or send me an email:
+            <a
+              href='mailto:viktorberczeli@dev-vik.tech'
+              className='text-pink-600 ml-2 hover:border-b-2 hover:border-pink-600'
+            >
+              viktorberczeli@dev-vik.tech
+            </a>
           </p>
         </div>
         <input
@@ -34,7 +51,10 @@ const Contact = () => {
           rows='10'
           placeholder='Message'
         ></textarea>
-        <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>
+        <button
+          onClick={resetFormHandleClick}
+          className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'
+        >
           Let's collaborate
         </button>
       </form>
