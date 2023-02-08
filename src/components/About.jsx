@@ -50,7 +50,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <p>
+            <p className='lg:text-2xl'>
               I am a web developer with a passion for creating dynamic websites.
               I have an understanding of the latest web technologies and
               constantly learning new skills to stay up-to-date in the field. I
