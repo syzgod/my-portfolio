@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div name='home' className='min-h-screen bg-slate-800'>
       <div className='max-w-[950px] mx-auto p-8 pt-36 flex flex-col justify-center'>
-        <p className='text-2xl text-pink-600'>Hi, my name is</p>
+        <p className='text-2xl text-pink-600 md:text-4xl'>Hi, my name is</p>
         <h1 className='text-4xl sm:text-7xl font-bold text-gray-200'>
           Viktor Berczeli
         </h1>
@@ -29,7 +29,7 @@ const Home = () => {
         <div>
           <Link
             to='/projects'
-            className='text-white group border-2 px-6 py-3 my-2 inline-flex items-center hover:bg-pink-600 hover:border-pink-600'
+            className='text-white group border-2 px-6 py-3 my-2 inline-flex items-center hover:bg-pink-600 hover:border-pink-600 md:text-2xl hover:shadow-xl hover:shadow-pink-600/50'
           >
             View my works
             <span className='group-hover:rotate-90 duration-300 ml-3'>

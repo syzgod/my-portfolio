@@ -20,15 +20,17 @@ const Skills = () => {
     >
       <div className='max-w-[950px] mx-auto px-8 flex flex-col justify-center'>
         <div>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
+          <p className='text-4xl md:text-5xl font-bold inline border-b-4 border-pink-600'>
             Experience
           </p>
-          <p className='py-4'>// These are the technologies I've worked with</p>
+          <p className='py-4 md:text-2xl'>
+            // These are the technologies I've worked with
+          </p>
         </div>
 
         {/* Technologies */}
 
-        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 md:text-2xl'>
           <div className='hover:scale-125 duration-500'>
             <img className='w-20 mx-auto' src={HTML} alt='HTML icon' />
             <p className='my-4'>HTML</p>

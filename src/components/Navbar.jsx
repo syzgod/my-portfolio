@@ -13,7 +13,7 @@ const Navbar = () => {
   const activeStyle = 'text-pink-600 font-bold';
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-8 bg-slate-800 shadow-xl'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-8 bg-slate-800 shadow-xl lg:text-2xl md:text-xl'>
       <div>
         <img src={Logo} alt='logo' style={{ width: '100px' }} />
       </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
         className={
           !showNav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen overflow-scroll bg-slate-800 flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full h-screen overflow-scroll bg-slate-800 flex flex-col justify-center items-center '
         }
       >
         <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
@@ -112,7 +112,7 @@ const Navbar = () => {
             Skills
           </NavLink>
         </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 '>
           <NavLink
             className={({ isActive }) => (isActive ? activeStyle : undefined)}
             onClick={handleClick}
@@ -128,7 +128,7 @@ const Navbar = () => {
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li
-            className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300
+            className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300
           bg-linkedin'
           >
             <a
@@ -138,7 +138,7 @@ const Navbar = () => {
               LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300 bg-github'>
+          <li className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-github'>
             <a
               className='flex justify-between items-center w-full text-gray-200 '
               href='https://github.com/syzgod'
@@ -146,7 +146,7 @@ const Navbar = () => {
               GitHub <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300 bg-red-400'>
+          <li className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-red-400'>
             <a
               className='flex justify-between items-center w-full text-gray-200 '
               href='mailto: viktorberczeli@dev-vik.tech'
@@ -154,7 +154,7 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[150px] h-[60px] flex justify-between items-center ml-[-90px] hover:ml-[-10px] duration-300 bg-violet-600'>
+          <li className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-violet-600'>
             <a
               className='flex justify-between items-center w-full text-gray-200'
               href='/'
