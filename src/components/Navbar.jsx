@@ -14,9 +14,9 @@ const Navbar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-8 bg-slate-800 shadow-xl lg:text-2xl md:text-xl'>
-      <div>
+      <a href='/'>
         <img src={Logo} alt='logo' style={{ width: '100px' }} />
-      </div>
+      </a>
 
       {/* Top Navigation */}
 
@@ -157,7 +157,7 @@ const Navbar = () => {
           <li className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-violet-600'>
             <a
               className='flex justify-between items-center w-full text-gray-200'
-              href='/'
+              href='https://www.dev-vik.tech/viktor_berczeli_ENG.pdf'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

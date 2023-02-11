@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa/';
+import { BsFillPersonLinesFill } from 'react-icons/bs/';
 
 const About = () => {
   return (
@@ -44,6 +45,14 @@ const About = () => {
                     href='https://github.com/syzgod'
                   >
                     GitHub <FaGithub size={30} className='ml-2' />
+                  </a>
+                </li>
+                <li className='inline-flex justify-center items-center  bg-violet-600 shadow-md border-2 border-gray-200 w-48'>
+                  <a
+                    className='flex justify-between items-center text-gray-200'
+                    href='https://www.dev-vik.tech/viktor_berczeli_ENG.pdf'
+                  >
+                    Resume <BsFillPersonLinesFill size={30} className='ml-2' />
                   </a>
                 </li>
               </ul>
