@@ -29,7 +29,7 @@ const Home = () => {
         <div>
           <Link
             to='/projects'
-            className='text-white group border-2 px-6 py-3 my-2 inline-flex items-center hover:bg-pink-600 hover:border-pink-600 md:text-2xl hover:shadow-xl hover:shadow-pink-600/50'
+            className='text-white group border-2 px-6 py-3 my-2 inline-flex items-center hover:bg-pink-700 hover:border-pink-700 md:text-2xl hover:shadow-xl hover:shadow-pink-700/50'
           >
             View my works
             <span className='group-hover:rotate-90 duration-300 ml-3'>

@@ -5,6 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
+import LeftArrow from '../assets/PngItem_566441.png';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -126,7 +127,7 @@ const Navbar = () => {
       {/* Contact sidebar */}
 
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
+        <ul className='relative'>
           <li
             className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300
           bg-linkedin'
@@ -163,6 +164,11 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+      </div>
+      <div className='hidden arrow top-[25rem] left-36 pointer-events-none -z-50 lg:block'>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   );
