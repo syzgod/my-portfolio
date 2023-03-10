@@ -38,18 +38,21 @@ const Contact = () => {
           type='text'
           name='name'
           placeholder='Name'
+          required
         />
         <input
           className='my-4 p-2 bg-gray-300 text-gray-800 md:text-2xl'
           type='email'
           name='email'
           placeholder='Email'
+          required
         />
         <textarea
           className='bg-gray-300 p-2 text-gray-800 md:text-2xl'
           name='message'
           rows='10'
           placeholder='Message'
+          required
         ></textarea>
         <button
           onClick={resetFormHandleClick}
