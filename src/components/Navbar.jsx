@@ -5,7 +5,6 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
-import LeftArrow from '../assets/PngItem_566441.png';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);

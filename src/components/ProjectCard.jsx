@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherApp from '../assets/chrome_sHXQTYhvv2.png';
+import WeatherApp from '../assets/weatherapp_screen.png';
 
 const ProjectCard = () => {
   return (
