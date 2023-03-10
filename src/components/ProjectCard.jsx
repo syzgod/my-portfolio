@@ -53,9 +53,8 @@ const ProjectCard = () => {
         >
           Code
           <svg
-            className='ml-2 text-white'
             aria-hidden='true'
-            class='octicon octicon-mark-github'
+            className='octicon octicon-mark-github ml-1'
             height='20'
             version='1.1'
             viewBox='0 0 16 16'
