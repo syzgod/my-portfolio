@@ -1,11 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
-  const formRef = useRef();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  const resetFormHandleClick = (e) => {
-    e.preventDefault();
-    formRef.current.reset();
+  const handleClick = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
   };
 
   return (
@@ -14,9 +17,9 @@ const Contact = () => {
       className='w-full min-h-screen px-8 bg-slate-800 flex justify-center pt-24'
     >
       <form
-        ref={formRef}
         action='https://getform.io/f/f51a54d9-2a95-4c81-8590-7b6ea5fb38c3'
         method='POST'
+        encType='multipart/form-data'
         className='flex flex-col max-w-[600px] w-full'
       >
         <div className='pb-8'>
@@ -38,24 +41,28 @@ const Contact = () => {
           type='text'
           name='name'
           placeholder='Name'
-          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
         <input
           className='my-4 p-2 bg-gray-300 text-gray-800 md:text-2xl'
           type='email'
           name='email'
           placeholder='Email'
-          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           className='bg-gray-300 p-2 text-gray-800 md:text-2xl'
           name='message'
           rows='10'
           placeholder='Message'
-          required
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         ></textarea>
         <button
-          onClick={resetFormHandleClick}
+          type='submit'
+          onClick={handleClick}
           className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center md:text-2xl hover:shadow-xl hover:shadow-pink-600/50'
         >
           Let's collaborate
