@@ -1,10 +1,18 @@
 import React from 'react';
 import WeatherApp from '../assets/weatherapp_screen.png';
+import ReactBadge from '../assets/react-badge.svg';
+import TypeScriptBadge from '../assets/typescript-badge.svg';
+import TailwindCSSBadge from '../assets/tailwind-badge.svg';
 
 const ProjectCard = () => {
   return (
     <div className='max-w-96 rounded-md h-fit overflow-hidden shadow-md shadow-zinc-900 bg-slate-700'>
       <img src={WeatherApp} alt='' className='hover:scale-110 transition' />
+      <div className='flex mt-3 justify-start mx-4'>
+        <img className='max-w-fit m-1' src={ReactBadge} alt='' />
+        <img className='max-w-fit m-1' src={TypeScriptBadge} alt='' />
+        <img className='max-w-fit m-1' src={TailwindCSSBadge} alt='' />
+      </div>
       <div className='p-4'>
         <h1 className='text-3xl text-left my-4'>React Weather App</h1>
         <p>
