@@ -24,6 +24,18 @@ const ProjectCard = () => {
           locations with same or similar name, a Forecast for the following
           hours, Detailed weather infos.
         </p>
+        <img
+          src='https://camo.githubusercontent.com/7719e4c089640a9e7399aa57e9c4528caa03d628f397a101be57d28cf910654c/68747470733a2f2f6261646765732e616c65656e34322e636f6d2f7372632f72656163742e737667'
+          alt='react-logo'
+        />
+        <img
+          src='https://camo.githubusercontent.com/b17853f14942b56a1952340c1a2a78f118fdb562824aa8eafe15971ad20096e1/68747470733a2f2f6261646765732e616c65656e34322e636f6d2f7372632f747970657363726970742e737667'
+          alt='typescript-logo'
+        />
+        <img
+          src='https://camo.githubusercontent.com/5413d4dc9e15c577b97c0aa65998f6c000efc89554b0629f951d0f2ebdf3c6c3/68747470733a2f2f6261646765732e616c65656e34322e636f6d2f7372632f7461696c77696e646373732e737667'
+          alt='tailwind-logo'
+        />
         <a
           href='https://master--yet-another-weather-forecast.netlify.app/'
           className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-lg hover:bg-pink-700 hover:border-pink-700 md:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 '
