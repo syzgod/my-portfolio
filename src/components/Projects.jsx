@@ -38,7 +38,7 @@ const Projects = () => {
             img={Subscribers}
             title={'Subscribers'}
             description={`A simple 'Subscribers' list showing Subscribers' cards on different pages with React, Redux Toolkit, and MUI.
-          Features: Pagination with cards per page, Dark mode, Toast notifications, Detail modal and Search`}
+          Features: Pagination with cards per page, Dark mode, Toast notifications, Detail modal and Search.`}
             demoURL={'https://subsribers.netlify.app/'}
             GitHubRepo={'https://github.com/syzgod/subscribers'}
             badgeImg={[ReactBadge, TypeScriptBadge, ReduxBadge, MUIBadge]}
