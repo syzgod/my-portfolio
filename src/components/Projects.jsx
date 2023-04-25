@@ -1,6 +1,14 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
+import WeatherApp from '../assets/weatherapp_screen.png';
+import Subscribers from '../assets/subscribers_screen.png';
+import ReactBadge from '../assets/react-badge.svg';
+import TypeScriptBadge from '../assets/typescript-badge.svg';
+import TailwindCSSBadge from '../assets/tailwind-badge.svg';
+import ReduxBadge from '../assets/redux-badge2.svg';
+import MUIBadge from '../assets/mui-badge.svg';
+
 const Projects = () => {
   return (
     <div
@@ -17,7 +25,24 @@ const Projects = () => {
           </p>
         </div>
         <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4'>
-          <ProjectCard />
+          <ProjectCard
+            img={WeatherApp}
+            title={'React Weather App'}
+            description={`Yet another Weather App with React and Tailwind CSS, using openweathermap API. 
+            Features: Different units for tempratures, Geolocation, Multiple locations with same or similar name, a Forecast for the following hours, Detailed weather infos.`}
+            demoURL={'https://yet-another-weather-forecast.netlify.app/'}
+            GitHubRepo={'https://github.com/syzgod/weather-app-to-portfolio'}
+            badgeImg={[ReactBadge, TypeScriptBadge, TailwindCSSBadge]}
+          />
+          <ProjectCard
+            img={Subscribers}
+            title={'Subscribers'}
+            description={`A simple 'Subscribers' list showing Subscribers' cards on different pages with React, Redux Toolkit, and MUI.
+          Features: Pagination with cards per page, Dark mode, Toast notifications, Detail modal and Search`}
+            demoURL={'https://subsribers.netlify.app/'}
+            GitHubRepo={'https://github.com/syzgod/subscribers'}
+            badgeImg={[ReactBadge, TypeScriptBadge, ReduxBadge, MUIBadge]}
+          />
         </div>
       </div>
     </div>
