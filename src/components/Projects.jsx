@@ -3,11 +3,11 @@ import ProjectCard from './ProjectCard';
 
 import WeatherApp from '../assets/weatherapp_screen.png';
 import Subscribers from '../assets/subscribers_screen.png';
-import ReactBadge from '../assets/react-badge.svg';
+import ReactBadge from '../assets/react-badge-flat.svg';
 import TypeScriptBadge from '../assets/typescript-badge.svg';
 import TailwindCSSBadge from '../assets/tailwind-badge.svg';
-import ReduxBadge from '../assets/redux-badge2.svg';
-import MUIBadge from '../assets/mui-badge.svg';
+import ReduxBadge from '../assets/redux-badge-flat.svg';
+import MUIBadge from '../assets/mui-badge-flat.svg';
 
 const Projects = () => {
   return (

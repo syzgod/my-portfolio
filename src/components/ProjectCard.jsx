@@ -14,15 +14,15 @@ const ProjectCard = ({
       <img
         src={img}
         alt=''
-        className='hover:scale-110 transition max-w-full shrink-0 h-auto'
+        className='hover:scale-110 transition max-w-full shrink-0 h-fit'
       />
       <div className='flex mt-3 justify-start mx-4 flex-wrap'>
         <TechBadge badgeImg={badgeImg} />
       </div>
-      <div className='p-4 flex flex-col justify-between items-center min-h-80'>
+      <div className='px-4 pb-4 flex flex-col justify-between items-center min-h-80'>
         <h1 className='text-3xl text-left my-4'>{title}</h1>
         <p>{description}</p>
-        <div className='buttons sm:gap-4 flex flex-col sm:flex-row w-full'>
+        <div className='buttons sm:gap-4 flex flex-col sm:flex-row w-full justify-center'>
           <a
             href={demoURL}
             className='inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white bg-pink-600 rounded-lg hover:bg-pink-700 hover:border-pink-700 xs:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 w-full sm:w-fit justify-center'
