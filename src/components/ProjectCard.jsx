@@ -10,18 +10,22 @@ const ProjectCard = ({
   GitHubRepo,
 }) => {
   return (
-    <div className='max-w-96 rounded-md max-h-[800px] overflow-hidden shadow-md shadow-zinc-900 bg-slate-700'>
-      <img src={img} alt='' className='hover:scale-110 transition h-64' />
-      <div className='flex mt-3 justify-start mx-4'>
+    <div className='max-w-96 rounded-md overflow-hidden shadow-md shadow-zinc-900 bg-slate-700 flex justify-between flex-col'>
+      <img
+        src={img}
+        alt=''
+        className='hover:scale-110 transition max-w-full shrink-0 h-auto'
+      />
+      <div className='flex mt-3 justify-start mx-4 flex-wrap'>
         <TechBadge badgeImg={badgeImg} />
       </div>
-      <div className='p-4 flex flex-col justify-between items-center h-80'>
+      <div className='p-4 flex flex-col justify-between items-center min-h-80'>
         <h1 className='text-3xl text-left my-4'>{title}</h1>
         <p>{description}</p>
-        <div className='buttons'>
+        <div className='buttons sm:gap-4 flex flex-col sm:flex-row w-full'>
           <a
             href={demoURL}
-            className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-lg hover:bg-pink-700 hover:border-pink-700 md:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 '
+            className='inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white bg-pink-600 rounded-lg hover:bg-pink-700 hover:border-pink-700 xs:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 w-full sm:w-fit justify-center'
           >
             Live Demo
             <svg
@@ -52,7 +56,7 @@ const ProjectCard = ({
           </a>
           <a
             href={GitHubRepo}
-            className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-lg hover:border-pink-700 md:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 ml-3 hover:bg-pink-700'
+            className='inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white bg-pink-600 rounded-lg hover:border-pink-700 xs:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 hover:bg-pink-700 w-full sm:w-fit justify-center'
           >
             Code
             <svg
