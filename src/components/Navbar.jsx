@@ -3,7 +3,6 @@ import Logo from '../assets/deviklogo.png';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa/';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
@@ -14,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-8 bg-slate-800 shadow-xl lg:text-2xl md:text-xl'>
-      <a href='/'>
+      <a href='/home'>
         <img src={Logo} alt='logo' style={{ width: '100px' }} />
       </a>
 
