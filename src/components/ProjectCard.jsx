@@ -10,7 +10,7 @@ const ProjectCard = ({
   GitHubRepo,
 }) => {
   return (
-    <div className='max-w-96 rounded-3xl overflow-hidden shadow-md shadow-zinc-900 bg-slate-700 flex justify-between flex-col'>
+    <div className='max-w-96 rounded-3xl overflow-hidden hover:shadow-lg hover:shadow-slate-900 bg-slate-700 flex justify-between flex-col'>
       <div className='overflow-hidden'>
         <img
           src={img}
