@@ -11,7 +11,7 @@ const About = () => {
       <div className='flex flex-col justify-center items-center w-full h-full '>
         <div className='max-w-[950px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4 '>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl'>
+            <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl rounded-xl px-2'>
               About
             </p>
           </div>
@@ -27,10 +27,10 @@ const About = () => {
               <p className='border-b-2 border-pink-600 inline text-2xl'>
                 And we can connect
               </p>
-              <ul className='mt-4 flex sm:justify-end flex-wrap'>
+              <ul className='mt-4 flex sm:justify-end flex-wrap gap-2'>
                 <li
                   className='flex justify-center items-center shadow-md border-2 border-gray-200 w-48
-                        bg-[#0072b1]'
+                        bg-[#0072b1] rounded-full'
                 >
                   <a
                     className='flex justify-between items-center text-gray-200'
@@ -39,7 +39,7 @@ const About = () => {
                     Linked <FaLinkedin size={30} />
                   </a>
                 </li>
-                <li className='inline-flex justify-center items-center  bg-[#333333] shadow-md border-2 border-gray-200 w-48'>
+                <li className='inline-flex justify-center items-center  bg-[#333333] shadow-md border-2 border-gray-200 w-48 rounded-full'>
                   <a
                     className='flex justify-between items-center text-gray-200'
                     href='https://github.com/syzgod'
@@ -47,7 +47,7 @@ const About = () => {
                     GitHub <FaGithub size={30} className='ml-2' />
                   </a>
                 </li>
-                <li className='inline-flex justify-center items-center  bg-violet-600 shadow-md border-2 border-gray-200 w-48'>
+                <li className='inline-flex justify-center items-center  bg-violet-600 shadow-md border-2 border-gray-200 w-48 rounded-full'>
                   <a
                     className='flex justify-between items-center text-gray-200'
                     href='https://www.dev-vik.tech/viktor_berczeli_ENG.pdf'
