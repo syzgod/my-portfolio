@@ -61,11 +61,10 @@ const About = () => {
           <div>
             <p className='lg:text-2xl'>
               I am a web developer with a passion for creating dynamic websites.
-              I have an understanding of the latest web technologies and
-              constantly learning new skills to stay up-to-date in the field. I
-              am experienced in HTML, CSS, JavaScript and other front-end
-              technologies. I am comfortable working with various web
-              development frameworks and libraries such as React.js, TypeScript,
+              I love tech and constantly learning new skills to stay up-to-date
+              in the field. I am experienced in HTML, CSS, JavaScript and other
+              related technologies. I am comfortable working with various web
+              development frameworks and libraries such as React, TypeScript,
               Tailwind CSS. I am also familiar with version control systems such
               as Git and GitHub. I am a problem solver and enjoy finding
               efficient solutions to web development challenges. As a team

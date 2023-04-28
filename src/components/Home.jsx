@@ -17,7 +17,7 @@ const Home = () => {
           My dream is becoming a fulltime Frontend Developer so I can do more
           what I love. I enjoy the process of learning new technologies and
           using them for various tasks. I am passionate about to acquire new
-          skills which helps me not just understand the technologies but also
+          skills which help me not just understand the technologies but also
           allow me to be more effective in what I do.
         </p>
         <div>
