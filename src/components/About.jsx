@@ -31,9 +31,6 @@ const About = () => {
             </p>
             <br />
             <div className='lg:hidden'>
-              <p className='border-b-2 border-pink-600 inline text-2xl'>
-                And we can connect
-              </p>
               <ul className='mt-4 flex sm:justify-end flex-wrap gap-2'>
                 <li
                   className='flex justify-center items-center shadow-md border-2 border-gray-200 w-48
@@ -84,7 +81,7 @@ const About = () => {
                 field. My free time (when I'm not with my daughters and my wife)
                 is dedicated for learning. I also like to read and travel with
                 my family. If I want to take a break I love to play computer
-                games or watching movies and series.
+                games or watch a movie or series.
               </p>
             </section>
           </div>
