@@ -22,12 +22,12 @@ const ProjectCard = ({
         <TechBadge badgeImg={badgeImg} />
       </div>
       <div className='px-4 pb-4 flex flex-col justify-between items-center min-h-80'>
-        <h1 className='text-3xl text-left my-4'>{title}</h1>
+        <h1 className='text-3xl text-left my-4 text-gray-100'>{title}</h1>
         <p>{description}</p>
         <div className='buttons sm:gap-4 flex flex-col sm:flex-row w-full justify-center'>
           <a
             href={demoURL}
-            className='relative group inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white xs:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 w-full sm:w-fit justify-center rounded-full border-2'
+            className='relative group inline-flex items-center px-3 py-2 text-lg font-medium text-center text-gray-100 xs:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 w-full sm:w-fit justify-center rounded-full border-2'
           >
             <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-pink-700 group-hover:h-full opacity-90 rounded-full'></span>
             <span className='relative rounded-full flex justify-center items-center flex-row'>
@@ -61,7 +61,7 @@ const ProjectCard = ({
           </a>
           <a
             href={GitHubRepo}
-            className='relative group inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white xs:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 w-full sm:w-fit justify-center border-2 rounded-full'
+            className='relative group inline-flex items-center px-3 py-2 text-lg font-medium text-center text-gray-100 xs:text-2xl hover:shadow-xl hover:shadow-pink-700/50 focus:ring-4 focus:outline-transparent focus:ring-pink-300 my-3 w-full sm:w-fit justify-center border-2 rounded-full'
           >
             <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-pink-700 group-hover:h-full opacity-90 rounded-full'></span>
             <span className='relative rounded-full flex justify-center items-center flex-row'>

@@ -23,17 +23,25 @@ const Contact = () => {
         className='flex flex-col max-w-[600px] w-full'
       >
         <div className='pb-8'>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300 md:text-5xl rounded-xl px-2'>
+          <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-100 md:text-5xl rounded-xl px-2'>
             Contact
           </p>
           <p className='text-gray-300 py-4 md:text-2xl'>
-            Submit the form below or send me an email:
+            You can reach me on{' '}
+            <a
+              href='http://www.linkedin.com/in/bevik'
+              className='bg-linkedin py-1 px-2 rounded-2xl text-gray-100'
+            >
+              LinkedIn
+            </a>{' '}
+            or send me an email to:
             <a
               href='mailto:viktorberczeli@dev-vik.tech'
               className='text-pink-600 ml-2 hover:border-b-2 hover:border-pink-600'
             >
               viktorberczeli@dev-vik.tech
             </a>
+            <p className='mt-5'>You can also Submit the form below:</p>
           </p>
         </div>
         <input
@@ -63,7 +71,7 @@ const Contact = () => {
         <button
           type='submit'
           onClick={handleClick}
-          className='text-white border-2 px-4 py-3 my-8 mx-auto flex items-center md:text-2xl hover:shadow-xl hover:shadow-pink-600/50 group relative rounded-full'
+          className='text-gray-100 border-2 px-4 py-3 my-8 mx-auto flex items-center md:text-2xl hover:shadow-xl hover:shadow-pink-600/50 group relative rounded-full'
         >
           <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-pink-700 group-hover:h-full opacity-90 rounded-full'></span>
           <span className='relative rounded-full'>Message Me</span>

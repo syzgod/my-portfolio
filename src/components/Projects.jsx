@@ -17,7 +17,7 @@ const Projects = () => {
     >
       <div className='max-w-[900px] mx-auto p-8 flex flex-col justify-center w-full h-full'>
         <div className='pt-16'>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl rounded-xl px-2'>
+          <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl rounded-xl px-2 text-gray-100'>
             Projects
           </p>
           <p className='py-6 md:text-2xl'>

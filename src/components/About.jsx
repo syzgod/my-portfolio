@@ -11,16 +11,23 @@ const About = () => {
       <div className='flex flex-col justify-center items-center w-full h-full '>
         <div className='max-w-[950px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4 '>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl rounded-xl px-2'>
-              About
+            <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl rounded-xl px-2 text-gray-100'>
+              About Me
             </p>
           </div>
         </div>
         <div className='max-w-[900px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='sm:text-right text-4xl font-bold'>
+            <p className='mb-6'>
+              Nice to meet you and welcome on my page. Please take a look
+              around.
+            </p>
             <p>
-              Hi. I'm <span className='text-pink-600'>Viktor</span>, nice to
-              meet you. Please take a look around on my webpage.
+              If you have any question don't hesitate to{' '}
+              <a href='/contact' className='text-gray-100 animate-pulse'>
+                contact me
+              </a>
+              .
             </p>
             <br />
             <div className='lg:hidden'>
@@ -59,18 +66,27 @@ const About = () => {
             </div>
           </div>
           <div>
-            <p className='lg:text-2xl'>
-              I am a web developer with a passion for creating dynamic websites.
-              I love tech and constantly learning new skills to stay up-to-date
-              in the field. I am experienced in HTML, CSS, JavaScript and other
-              related technologies. I am comfortable working with various web
-              development frameworks and libraries such as React, TypeScript,
-              Tailwind CSS. I am also familiar with version control systems such
-              as Git and GitHub. I am a problem solver and enjoy finding
-              efficient solutions to web development challenges. As a team
-              player I enjoy collaborating to create outstanding web projects. I
-              am always looking for new ways to improve my skills.
-            </p>
+            <section className='lg:text-2xl'>
+              <p>
+                I am a self-taught{' '}
+                <span className='text-pink-600'>Frontend Developer</span>. I've
+                decided I want to learn to code and completely change career for
+                the better.
+              </p>{' '}
+              <h1 className='text-4xl my-3 text-pink-600 font-bold'>
+                So why coding?
+              </h1>{' '}
+              <p>
+                I love tech and I enjoy learning new skills. Improving myself
+                makes me happy and satisfied. Seeing getting better at critical
+                thinking and problem solving keeps me motivated and pushing me
+                towards my higher goals to acquire more related knowledge in the
+                field. My free time (when I'm not with my daughters and my wife)
+                is dedicated for learning. I also like to read and travel with
+                my family. If I want to take a break I love to play computer
+                games or watching movies and series.
+              </p>
+            </section>
           </div>
         </div>
       </div>

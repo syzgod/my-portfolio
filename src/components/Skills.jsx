@@ -20,7 +20,7 @@ const Skills = () => {
     >
       <div className='max-w-[950px] mx-auto px-8 flex flex-col justify-center'>
         <div>
-          <p className='text-4xl md:text-5xl font-bold inline border-b-4 border-pink-600 rounded-xl px-2'>
+          <p className='text-4xl md:text-5xl font-bold inline border-b-4 border-pink-600 rounded-xl px-2 text-gray-100'>
             Experience
           </p>
           <p className='py-4 md:text-2xl'>
