@@ -41,7 +41,7 @@ const Contact = () => {
             >
               viktorberczeli@dev-vik.tech
             </a>
-            <p className='mt-5'>You can also Submit the form below:</p>
+            <div className='mt-5'>You can also Submit the form below:</d>
           </p>
         </div>
         <input
