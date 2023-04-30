@@ -91,13 +91,13 @@ const About = () => {
               </h1>{' '}
               <p>
                 I love tech and I enjoy learning new skills. Improving myself
-                makes me happy and satisfied. Seeing getting better at critical
+                makes me happy and satisfied. Getting better at critical
                 thinking and problem solving keeps me motivated and pushing me
-                towards my higher goals to acquire more related knowledge in the
-                field. My free time (when I'm not with my daughters and my wife)
-                is dedicated for learning. I also like to read and travel with
-                my family. If I want to take a break I love to play computer
-                games or watching movies and series.
+                towards my higher goals to acquire more knowledge in the field.
+                My free time (when I'm not with my daughters and my wife) is
+                dedicated mostly for learning. I also like to read and travel
+                with my family. If I want to take a break I love to play
+                computer games or watching movies and series.
               </p>
             </section>
           </div>
