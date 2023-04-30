@@ -21,7 +21,7 @@ const Home = () => {
           technologies better but also allowing me to be more efficient in what
           I do.
         </p>
-        <div>
+        <div className='cursor-pointer w-fit'>
           <Link
             smooth
             to='projects'

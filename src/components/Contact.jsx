@@ -5,7 +5,7 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleClick = () => {
+  const handleResetInputClick = () => {
     setName('');
     setEmail('');
     setMessage('');
@@ -70,7 +70,7 @@ const Contact = () => {
         ></textarea>
         <button
           type='submit'
-          onClick={handleClick}
+          onClick={handleResetInputClick}
           className='text-gray-100 border-2 px-4 py-3 my-8 mx-auto flex items-center md:text-2xl hover:shadow-xl hover:shadow-pink-600/50 group relative rounded-full'
         >
           <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-pink-700 group-hover:h-full opacity-90 rounded-full'></span>

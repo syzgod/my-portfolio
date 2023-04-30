@@ -15,7 +15,7 @@ import {
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-  const handleClick = () => setShowNav(!showNav);
+  const handleNavClick = () => setShowNav(!showNav);
 
   const activeStyle = 'text-pink-600 font-bold';
 
@@ -28,34 +28,37 @@ const Navbar = () => {
       {/* Top Navigation */}
 
       <ul className='hidden md:flex'>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='home'>
+        <Link spy={true} activeClass={activeStyle} smooth to='home'>
+          <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             Home
-          </Link>
-        </li>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='about'>
+          </li>
+        </Link>
+        <Link spy={true} activeClass={activeStyle} smooth to='about'>
+          <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             About
-          </Link>
-        </li>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='projects'>
+          </li>
+        </Link>
+        <Link spy={true} activeClass={activeStyle} smooth to='projects'>
+          <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             Projects
-          </Link>
-        </li>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='skills'>
+          </li>
+        </Link>
+        <Link spy={true} activeClass={activeStyle} smooth to='skills'>
+          <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             Skills
-          </Link>
-        </li>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='contact'>
+          </li>
+        </Link>
+        <Link spy={true} activeClass={activeStyle} smooth to='contact'>
+          <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             Contact
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
 
-      <div onClick={handleClick} className='md:hidden z-10 hover:text-pink-600'>
+      <div
+        onClick={handleNavClick}
+        className='md:hidden z-10 hover:text-pink-600'
+      >
         {!showNav ? <FaBars size={30} /> : <FaTimes size={30} />}
       </div>
 
@@ -65,34 +68,64 @@ const Navbar = () => {
         className={
           !showNav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen overflow-scroll bg-slate-800 flex flex-col justify-center items-center '
+            : 'absolute top-0 left-0 w-full h-screen overflow-scroll bg-slate-900 flex flex-col justify-center items-center opacity-95'
         }
       >
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='home'>
+        <Link
+          spy={true}
+          activeClass={activeStyle}
+          smooth
+          to='home'
+          onClick={handleNavClick}
+        >
+          <li className='py-2 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             Home
-          </Link>
-        </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='about'>
+          </li>
+        </Link>
+        <Link
+          spy={true}
+          activeClass={activeStyle}
+          smooth
+          to='about'
+          onClick={handleNavClick}
+        >
+          <li className='py-2 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             About
-          </Link>
-        </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='projects'>
+          </li>
+        </Link>
+        <Link
+          spy={true}
+          activeClass={activeStyle}
+          smooth
+          to='projects'
+          onClick={handleNavClick}
+        >
+          <li className='py-2 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             Projects
-          </Link>
-        </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='skills'>
+          </li>
+        </Link>
+        <Link
+          spy={true}
+          activeClass={activeStyle}
+          smooth
+          to='skills'
+          onClick={handleNavClick}
+        >
+          <li className='py-2 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             Skills
-          </Link>
-        </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
-          <Link spy={true} activeClass={activeStyle} smooth to='contact'>
+          </li>
+        </Link>
+        <Link
+          spy={true}
+          activeClass={activeStyle}
+          smooth
+          to='contact'
+          onClick={handleNavClick}
+        >
+          <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
             Contact
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
 
       {/* Contact sidebar */}
