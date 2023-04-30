@@ -3,15 +3,7 @@ import Logo from '../assets/deviklogo.png';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa/';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -130,7 +122,7 @@ const Navbar = () => {
 
       {/* Contact sidebar */}
 
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+      <div className='hidden lg:flex fixed flex-col top-[35%] -left-1'>
         <ul className='relative flex flex-col gap-0.5'>
           <li
             className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300

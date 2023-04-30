@@ -8,24 +8,24 @@ const About = () => {
   return (
     <div
       name='about'
-      className='w-full min-h-screen p-4 bg-slate-800 text-gray-300 pt-20'
+      className='w-full min-h-screen p-4 bg-slate-800 text-gray-300'
     >
-      <div className='flex flex-col justify-center items-center w-full h-full mt-28'>
-        <div className='max-w-[950px] w-full grid grid-cols-2 gap-8'>
-          <div className='sm:text-right pb-8 pl-4 '>
+      <div className='flex flex-col justify-center items-center w-full h-full mt-20'>
+        <div className='max-w-[950px] w-full grid md:grid-cols-2 gap-8'>
+          <div className='sm:text-center md:text-right lg:text-right pb-8 pl-4 md:mb-16'>
             <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl text-gray-100'>
               About Me
             </p>
           </div>
         </div>
         <div className='max-w-[900px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-          <div className='sm:text-right text-4xl font-bold'>
-            <p className='mb-6'>
+          <div className='sm:text-right text-lg md:text-3xl lg:text-4xl font-bold'>
+            <p className='mb-4'>
               Nice to meet you and welcome on my page. Please take a look
               around.
             </p>
             <p>
-              If you have any question don't hesitate to{' '}
+              If you have any questions don't hesitate to{' '}
               <Link
                 smooth
                 to='contact'
@@ -37,7 +37,7 @@ const About = () => {
             </p>
             <br />
             <div className='lg:hidden'>
-              <ul className='mt-4 flex sm:justify-end flex-wrap gap-2 text-2xl'>
+              <ul className='flex sm:justify-end flex-wrap gap-2 text-2xl'>
                 <li
                   className='relative group flex justify-center items-center shadow-md border-2 border-gray-200 w-48
                        rounded-full'
@@ -79,7 +79,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <section className='lg:text-2xl'>
+            <section className='text-2xl text-gray-400'>
               <p>
                 I am a self-taught{' '}
                 <span className='text-pink-600'>Frontend Developer</span>. I've
@@ -97,7 +97,7 @@ const About = () => {
                 My free time (when I'm not with my daughters and my wife) is
                 dedicated mostly for learning. I also like to read and travel
                 with my family. If I want to take a break I love to play
-                computer games or watching movies and series.
+                computer games or watch movies or series.
               </p>
             </section>
           </div>

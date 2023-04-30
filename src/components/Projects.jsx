@@ -15,12 +15,12 @@ const Projects = () => {
       name='projects'
       className='w-full min-h-screen text-gray-300 bg-slate-800'
     >
-      <div className='max-w-[900px] mx-auto p-8 flex flex-col justify-center w-full h-full'>
-        <div className='mt-44'>
+      <div className='max-w-[900px] mx-auto p-8 flex flex-col justify-center h-full'>
+        <div className='mt-16'>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl text-gray-100'>
             Projects
           </p>
-          <p className='py-6 md:text-2xl'>
+          <p className='py-6 md:text-2xl md:mb-10'>
             // Check out some of my recent projects
           </p>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -20,20 +21,21 @@ const Contact = () => {
         action='https://getform.io/f/f51a54d9-2a95-4c81-8590-7b6ea5fb38c3'
         method='POST'
         encType='multipart/form-data'
-        className='flex flex-col max-w-[600px] w-full mt-52'
+        className='flex flex-col max-w-[600px] w-full mt-24'
       >
-        <div className='pb-8'>
+        <div className=''>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-100 md:text-5xl'>
             Contact
           </p>
-          <div className='text-gray-300 py-4 md:text-2xl'>
+          <div className='text-gray-300 py-4 md:text-2xl md:my-10'>
             You can reach me on{' '}
             <a
               href='http://www.linkedin.com/in/bevik'
-              className='bg-linkedin py-1 px-2 rounded-2xl text-gray-100'
+              className='bg-linkedin inline-flex py-1 px-2 rounded-2xl items-center justify-center text-gray-100 mr-1'
             >
-              LinkedIn
-            </a>{' '}
+              <span className='mr-0.5'>Linked</span>
+              <FaLinkedin />
+            </a>
             or send me an email to:
             <a
               href='mailto:viktorberczeli@dev-vik.tech'

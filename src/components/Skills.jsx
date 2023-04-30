@@ -16,10 +16,10 @@ const Skills = () => {
     <div
       name='skills'
       className='min-h-screen
-       bg-slate-800 text-gray-300 pt-24'
+       bg-slate-800 text-gray-300'
     >
       <div className='max-w-[950px] mx-auto px-8 flex flex-col justify-center mt-28'>
-        <div>
+        <div className='mt-24'>
           <p className='text-4xl md:text-5xl font-bold inline border-b-4 border-pink-600 text-gray-100'>
             Experience
           </p>
@@ -30,7 +30,7 @@ const Skills = () => {
 
         {/* Technologies */}
 
-        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 md:text-2xl'>
+        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center md:text-2xl md:mt-10'>
           <div className='hover:scale-125 duration-500'>
             <img className='w-20 mx-auto' src={HTML} alt='HTML icon' />
             <p className='my-4'>HTML</p>

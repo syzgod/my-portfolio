@@ -1,19 +1,25 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
+import codeTyping from '../assets/code-typing.svg';
 
 const Home = () => {
   return (
-    <div name='home' className='min-h-screen bg-slate-800 pt-16'>
-      <div className='max-w-[950px] mx-auto p-8 pt-36 flex flex-col justify-center'>
+    <div name='home' className='min-h-screen bg-slate-800 relative'>
+      <div className='relative max-w-[950px] mx-auto p-14 pt-36 flex flex-col justify-center'>
+        <img
+          src={codeTyping}
+          alt=''
+          className='absolute w-[35rem] md:w-[40rem] md:left-[20rem] md:top-48 xl:top-64 xl:left-[40rem] xl:w-[50rem] opacity-5 left-0 top-64'
+        />
         <p className='text-2xl text-pink-600 md:text-4xl'>Hi, my name is</p>
-        <h1 className='text-4xl sm:text-7xl font-bold text-gray-100'>
+        <h1 className='text-4xl sm:text-6xl font-bold text-gray-100'>
           Viktor Berczeli
         </h1>
-        <h2 className='text-4xl sm:text-7xl font-bold text-gray-400'>
+        <h2 className='flex text-3xl md:text-5xl font-bold text-gray-900 bg-pink-600 w-fit'>
           I'm a Front-End Developer.
         </h2>
-        <p className='text-gray-400 py-4 max-w-[700] lg:text-2xl'>
+        <p className='text-gray-400 py-4 sm:text-2xl md:text-3xl'>
           My dream is becoming a full-time Front-end Developer so I can do more
           what I love. I enjoy the process and the progress of learning new
           technologies and using them for various tasks. I am passionate about
