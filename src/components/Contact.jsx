@@ -14,19 +14,19 @@ const Contact = () => {
   return (
     <div
       name='contact'
-      className='w-full min-h-screen px-8 bg-slate-800 flex justify-center pt-24'
+      className='w-full min-h-screen px-8 bg-slate-800 flex justify-center'
     >
       <form
         action='https://getform.io/f/f51a54d9-2a95-4c81-8590-7b6ea5fb38c3'
         method='POST'
         encType='multipart/form-data'
-        className='flex flex-col max-w-[600px] w-full'
+        className='flex flex-col max-w-[600px] w-full mt-52'
       >
         <div className='pb-8'>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-100 md:text-5xl rounded-xl px-2'>
+          <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-100 md:text-5xl'>
             Contact
           </p>
-          <p className='text-gray-300 py-4 md:text-2xl'>
+          <div className='text-gray-300 py-4 md:text-2xl'>
             You can reach me on{' '}
             <a
               href='http://www.linkedin.com/in/bevik'
@@ -41,8 +41,8 @@ const Contact = () => {
             >
               viktorberczeli@dev-vik.tech
             </a>
-            <div className='mt-5'>You can also Submit the form below:</d>
-          </p>
+            <span className='mt-5'>You can also Submit the form below:</span>
+          </div>
         </div>
         <input
           className='bg-gray-300 p-3 text-gray-800 md:text-2xl rounded-full'

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import { FaGithub, FaLinkedin } from 'react-icons/fa/';
 import { BsFillPersonLinesFill } from 'react-icons/bs/';
 
@@ -6,12 +8,12 @@ const About = () => {
   return (
     <div
       name='about'
-      className='w-full min-h-screen pt-24 p-4 bg-slate-800 text-gray-300'
+      className='w-full min-h-screen p-4 bg-slate-800 text-gray-300 pt-20'
     >
-      <div className='flex flex-col justify-center items-center w-full h-full '>
+      <div className='flex flex-col justify-center items-center w-full h-full mt-28'>
         <div className='max-w-[950px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4 '>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl rounded-xl px-2 text-gray-100'>
+            <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl text-gray-100'>
               About Me
             </p>
           </div>
@@ -24,43 +26,54 @@ const About = () => {
             </p>
             <p>
               If you have any question don't hesitate to{' '}
-              <a href='/contact' className='text-gray-100 animate-pulse'>
+              <Link
+                smooth
+                to='contact'
+                className='cursor-pointer text-gray-100 animate-pulse border-b-2 border-pink-600'
+              >
                 contact me
-              </a>
+              </Link>
               .
             </p>
             <br />
             <div className='lg:hidden'>
-              <p className='border-b-2 border-pink-600 inline text-2xl'>
-                And we can connect
-              </p>
-              <ul className='mt-4 flex sm:justify-end flex-wrap gap-2'>
+              <ul className='mt-4 flex sm:justify-end flex-wrap gap-2 text-2xl'>
                 <li
-                  className='flex justify-center items-center shadow-md border-2 border-gray-200 w-48
-                        bg-[#0072b1] rounded-full'
+                  className='relative group flex justify-center items-center shadow-md border-2 border-gray-200 w-48
+                       rounded-full'
                 >
-                  <a
-                    className='flex justify-between items-center text-gray-200'
-                    href='http://www.linkedin.com/in/bevik'
-                  >
-                    Linked <FaLinkedin size={30} />
-                  </a>
+                  <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-linkedin group-hover:h-full opacity-90 rounded-full'></span>
+                  <span className='relative rounded-full flex justify-center items-center flex-row'>
+                    <a
+                      className='flex justify-between items-center text-gray-200'
+                      href='http://www.linkedin.com/in/bevik'
+                    >
+                      Linked <FaLinkedin size={25} />
+                    </a>
+                  </span>
                 </li>
-                <li className='inline-flex justify-center items-center  bg-[#333333] shadow-md border-2 border-gray-200 w-48 rounded-full'>
-                  <a
-                    className='flex justify-between items-center text-gray-200'
-                    href='https://github.com/syzgod'
-                  >
-                    GitHub <FaGithub size={30} className='ml-2' />
-                  </a>
+                <li className='relative group inline-flex justify-center items-center shadow-md border-2 border-gray-200 w-48 rounded-full'>
+                  <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-github group-hover:h-full opacity-90 rounded-full'></span>
+                  <span className='relative rounded-full flex justify-center items-center flex-row'>
+                    <a
+                      className='flex justify-between items-center text-gray-200'
+                      href='https://github.com/syzgod'
+                    >
+                      GitHub <FaGithub size={25} className='ml-2' />
+                    </a>
+                  </span>
                 </li>
-                <li className='inline-flex justify-center items-center  bg-violet-600 shadow-md border-2 border-gray-200 w-48 rounded-full'>
-                  <a
-                    className='flex justify-between items-center text-gray-200'
-                    href='https://www.dev-vik.tech/viktor_berczeli_ENG.pdf'
-                  >
-                    Resume <BsFillPersonLinesFill size={30} className='ml-2' />
-                  </a>
+                <li className='relative group inline-flex justify-center items-center shadow-md border-2 border-gray-200 w-48 rounded-full'>
+                  <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-violet-600 group-hover:h-full opacity-90 rounded-full'></span>
+                  <span className='relative rounded-full flex justify-center items-center flex-row'>
+                    <a
+                      className='flex justify-between items-center text-gray-200'
+                      href='https://www.dev-vik.tech/viktor_berczeli_ENG.pdf'
+                    >
+                      Resume{' '}
+                      <BsFillPersonLinesFill size={25} className='ml-2' />
+                    </a>
+                  </span>
                 </li>
               </ul>
             </div>

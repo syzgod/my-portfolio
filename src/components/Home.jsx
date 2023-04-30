@@ -1,10 +1,10 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
-    <div name='home' className='min-h-screen bg-slate-800'>
+    <div name='home' className='min-h-screen bg-slate-800 pt-16'>
       <div className='max-w-[950px] mx-auto p-8 pt-36 flex flex-col justify-center'>
         <p className='text-2xl text-pink-600 md:text-4xl'>Hi, my name is</p>
         <h1 className='text-4xl sm:text-7xl font-bold text-gray-100'>
@@ -23,7 +23,8 @@ const Home = () => {
         </p>
         <div>
           <Link
-            to='/projects'
+            smooth
+            to='projects'
             className='text-gray-100 group border-2 px-6 py-3 my-2 inline-flex items-center rounded-full md:text-2xl hover:shadow-xl hover:shadow-pink-700/50 relative'
           >
             {' '}

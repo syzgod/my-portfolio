@@ -8,6 +8,7 @@
   body {
     @apply font-[Raleway];
     color: white;
+    background-color: rgb(30 41 59);
   }
   li {
     @apply px-4;

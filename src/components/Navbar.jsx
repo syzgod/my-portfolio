@@ -3,7 +3,15 @@ import Logo from '../assets/deviklogo.png';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa/';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { NavLink } from 'react-router-dom';
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -13,52 +21,37 @@ const Navbar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-8 bg-slate-800 shadow-lg lg:text-2xl md:text-xl shadow-slate-900 z-50'>
-      <a href='/home'>
+      <Link smooth to='home' className='cursor-pointer'>
         <img src={Logo} alt='logo' style={{ width: '100px' }} />
-      </a>
+      </Link>
 
       {/* Top Navigation */}
 
       <ul className='hidden md:flex'>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            to='/home'
-          >
+        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='home'>
             Home
-          </NavLink>
+          </Link>
         </li>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            to='/about'
-          >
+        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='about'>
             About
-          </NavLink>
+          </Link>
         </li>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            to='/projects'
-          >
+        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='projects'>
             Projects
-          </NavLink>
+          </Link>
         </li>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            to='/skills'
-          >
+        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='skills'>
             Skills
-          </NavLink>
+          </Link>
         </li>
-        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            to='/contact'
-          >
+        <li className='border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='contact'>
             Contact
-          </NavLink>
+          </Link>
         </li>
       </ul>
 
@@ -75,50 +68,30 @@ const Navbar = () => {
             : 'absolute top-0 left-0 w-full h-screen overflow-scroll bg-slate-800 flex flex-col justify-center items-center '
         }
       >
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            onClick={handleClick}
-            to='/home'
-          >
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='home'>
             Home
-          </NavLink>
+          </Link>
         </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            onClick={handleClick}
-            to='/about'
-          >
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='about'>
             About
-          </NavLink>
+          </Link>
         </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            onClick={handleClick}
-            to='/projects'
-          >
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='projects'>
             Projects
-          </NavLink>
+          </Link>
         </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            onClick={handleClick}
-            to='/skills'
-          >
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='skills'>
             Skills
-          </NavLink>
+          </Link>
         </li>
-        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600 rounded-xl'>
-          <NavLink
-            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-            onClick={handleClick}
-            to='/contact'
-          >
+        <li className='py-4 text-4xl border-b-4 border-transparent hover:border-b-4 hover:border-pink-600'>
+          <Link spy={true} activeClass={activeStyle} smooth to='contact'>
             Contact
-          </NavLink>
+          </Link>
         </li>
       </ul>
 
@@ -163,11 +136,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className='hidden arrow top-[25rem] left-36 pointer-events-none -z-50 lg:block'>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div className='hidden arrow top-[25rem] left-36 pointer-events-none -z-50 lg:block'></div>
     </div>
   );
 };
