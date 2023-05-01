@@ -11,14 +11,13 @@ const About = () => {
       className='w-full min-h-screen p-4 bg-slate-800 text-gray-300'
     >
       <div className='flex flex-col justify-center items-center w-full h-full mt-20'>
-        <div className='max-w-[950px] w-full grid md:grid-cols-2 gap-8'>
-          <div className='sm:text-center md:text-right lg:text-right pb-8 pl-4 md:mb-16'>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl text-gray-100'>
-              About Me
-            </p>
-          </div>
+        <div className='text-center pb-8 pl-8 md:mb-16'>
+          <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl text-gray-100'>
+            About Me
+          </p>
         </div>
-        <div className='max-w-[900px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+        <div className='max-w-[950px] w-full grid md:grid-cols-2 gap-8'></div>
+        <div className='max-w-[900px] w-full grid sm:grid-cols-2 gap-8 px-8'>
           <div className='sm:text-right text-lg md:text-3xl lg:text-4xl font-bold'>
             <p className='mb-4'>
               Nice to meet you and welcome on my page. Please take a look

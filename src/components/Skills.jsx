@@ -18,7 +18,7 @@ const Skills = () => {
       className='min-h-screen
        bg-slate-800 text-gray-300'
     >
-      <div className='max-w-[950px] mx-auto px-8 flex flex-col justify-center mt-28'>
+      <div className='max-w-[950px] mx-auto px-8 flex flex-col justify-center mt-28 text-center'>
         <div className='mt-24'>
           <p className='text-4xl md:text-5xl font-bold inline border-b-4 border-pink-600 text-gray-100'>
             Experience

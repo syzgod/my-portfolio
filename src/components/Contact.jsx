@@ -21,7 +21,7 @@ const Contact = () => {
         action='https://getform.io/f/f51a54d9-2a95-4c81-8590-7b6ea5fb38c3'
         method='POST'
         encType='multipart/form-data'
-        className='flex flex-col max-w-[600px] w-full mt-24'
+        className='flex flex-col max-w-[600px] w-full text-center mt-24'
       >
         <div className=''>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-100 md:text-5xl'>
@@ -43,7 +43,7 @@ const Contact = () => {
             >
               viktorberczeli@dev-vik.tech
             </a>
-            <span className='mt-5'>You can also Submit the form below:</span>
+            <div className='mt-5'>You can also Submit the form below:</div>
           </div>
         </div>
         <input
