@@ -6,11 +6,11 @@ import codeTyping from '../assets/code-typing.svg';
 const Home = () => {
   return (
     <div name='home' className='min-h-screen bg-slate-800 relative'>
-      <div className='relative max-w-[950px] mx-auto p-8 pt-36 flex flex-col justify-center'>
+      <div className='relative max-w-[950px] mx-auto p-8 pt-24 md:pt-36 flex flex-col justify-center items-center md:items-start'>
         <img
           src={codeTyping}
           alt=''
-          className='absolute w-[35rem] md:w-[40rem] md:left-[20rem] md:top-48 xl:top-64 xl:left-[40rem] xl:w-[50rem] opacity-5 left-0 top-64'
+          className='absolute w-[35rem] md:w-[40rem] md:left-[20rem] md:top-48 xl:top-64 xl:left-[40rem] xl:w-[50rem] opacity-5 left-0'
         />
         <p className='text-2xl text-pink-600 md:text-4xl'>Hi, my name is</p>
         <h1 className='text-4xl sm:text-6xl font-bold text-gray-100 mb-2'>
@@ -27,7 +27,7 @@ const Home = () => {
           technologies better but also allowing me to be more efficient in what
           I do.
         </p>
-        <div className='cursor-pointer w-fit'>
+        <div className='cursor-pointer flex justify-center items-center md:justify-start'>
           <Link
             smooth
             to='projects'

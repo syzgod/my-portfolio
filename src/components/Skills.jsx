@@ -24,7 +24,7 @@ const Skills = () => {
           <p className='text-4xl md:text-5xl font-bold inline border-b-4 border-pink-600 text-gray-100'>
             Experience
           </p>
-          <p className='py-4 md:text-2xl'>
+          <p className='py-4 md:text-2xl m-2'>
             // These are the technologies I've worked with
           </p>
         </div>
@@ -75,7 +75,7 @@ const Skills = () => {
           <img
             src={programming}
             alt=''
-            className='absolute w-[40rem] opacity-20 top-56 right-64'
+            className='absolute w-[30rem] lg:w-[40rem] opacity-10 md:top-36 right-10 md:right-64'
           />
         </div>
       </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-8 bg-slate-800 shadow-lg lg:text-2xl md:text-xl shadow-slate-900 z-50'>
       <Link smooth to='home' className='cursor-pointer'>
-        <img src={Logo} alt='logo' style={{ width: '100px' }} />
+        <img src={Logo} alt='logo' style={{ width: '150px' }} />
       </Link>
 
       {/* Top Navigation */}

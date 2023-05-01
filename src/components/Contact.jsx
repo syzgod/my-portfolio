@@ -24,11 +24,11 @@ const Contact = () => {
         encType='multipart/form-data'
         className='flex flex-col max-w-[600px] w-full text-center mt-24'
       >
-        <div className=''>
+        <div>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-100 md:text-5xl'>
             Contact
           </p>
-          <div className='text-gray-300 py-4 md:text-2xl md:my-10 text-left'>
+          <div className='text-gray-300 py-4 md:text-2xl md:my-10 text-left mt-3'>
             You can reach me on{' '}
             <a
               href='http://www.linkedin.com/in/bevik'
@@ -83,7 +83,7 @@ const Contact = () => {
       <img
         src={connect}
         alt=''
-        className='absolute w-[40rem] opacity-10 top-56 right-36'
+        className='absolute md:w-[40rem] opacity-10 top-16 md:top-56 md:right-36'
       />
     </div>
   );

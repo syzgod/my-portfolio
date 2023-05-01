@@ -17,7 +17,7 @@ const About = () => {
             About Me
           </p>
         </div>
-        <div className='md:w-1/2 grid sm:grid-cols-2 gap-8'>
+        <div className='md:w-2/3 grid sm:grid-cols-2 gap-8'>
           <div className='sm:text-right text-lg md:text-2xl lg:text-4xl font-bold'>
             <p className='mb-4'>
               Nice to meet you and welcome on my page. Please take a look
@@ -38,7 +38,7 @@ const About = () => {
             <div className='lg:hidden'>
               <ul className='flex justify-center flex-wrap gap-2 text-2xl'>
                 <li
-                  className='relative group flex justify-center items-center shadow-md border-2 border-gray-200 w-48
+                  className='relative group flex justify-center items-center shadow-md border-2 border-gray-200 w-42
                        rounded-full'
                 >
                   <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-linkedin group-hover:h-full opacity-90 rounded-full'></span>
@@ -51,7 +51,7 @@ const About = () => {
                     </a>
                   </span>
                 </li>
-                <li className='relative group inline-flex justify-center items-center shadow-md border-2 border-gray-200 w-48 rounded-full'>
+                <li className='relative group inline-flex justify-center items-center shadow-md border-2 border-gray-200 w-42 rounded-full'>
                   <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-github group-hover:h-full opacity-90 rounded-full'></span>
                   <span className='relative rounded-full flex justify-center items-center flex-row'>
                     <a
@@ -62,7 +62,7 @@ const About = () => {
                     </a>
                   </span>
                 </li>
-                <li className='relative group inline-flex justify-center items-center shadow-md border-2 border-gray-200 w-48 rounded-full'>
+                <li className='relative group inline-flex justify-center items-center shadow-md border-2 border-gray-200 w-42 rounded-full'>
                   <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-violet-600 group-hover:h-full opacity-90 rounded-full'></span>
                   <span className='relative rounded-full flex justify-center items-center flex-row'>
                     <a
