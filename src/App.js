@@ -6,16 +6,18 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ErrorPage from './components/ErrorPage';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='selection:text-slate-800 selection:bg-pink-500'>
+    <div className='selection:text-slate-800 selection:bg-pink-500 overflow-hidden'>
       <Navbar />
       <Home />
       <About />
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 }

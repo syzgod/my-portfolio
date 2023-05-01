@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
+import connect from '../assets/connect.svg';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -15,7 +16,7 @@ const Contact = () => {
   return (
     <div
       name='contact'
-      className='w-full min-h-screen px-8 bg-slate-800 flex justify-center'
+      className='relative w-full min-h-screen px-8 bg-slate-800 flex justify-center'
     >
       <form
         action='https://getform.io/f/f51a54d9-2a95-4c81-8590-7b6ea5fb38c3'
@@ -27,7 +28,7 @@ const Contact = () => {
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-100 md:text-5xl'>
             Contact
           </p>
-          <div className='text-gray-300 py-4 md:text-2xl md:my-10'>
+          <div className='text-gray-300 py-4 md:text-2xl md:my-10 text-left'>
             You can reach me on{' '}
             <a
               href='http://www.linkedin.com/in/bevik'
@@ -65,7 +66,7 @@ const Contact = () => {
         <textarea
           className='bg-gray-300 p-3 text-gray-800 md:text-2xl rounded-3xl'
           name='message'
-          rows='10'
+          rows='5'
           placeholder='Message'
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -79,6 +80,11 @@ const Contact = () => {
           <span className='relative rounded-full'>Message Me</span>
         </button>
       </form>
+      <img
+        src={connect}
+        alt=''
+        className='absolute w-[40rem] opacity-10 top-56 right-36'
+      />
     </div>
   );
 };

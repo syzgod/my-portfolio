@@ -1,4 +1,5 @@
 import React from 'react';
+import programming from '../assets/programming-skills.svg';
 
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
@@ -16,7 +17,7 @@ const Skills = () => {
     <div
       name='skills'
       className='min-h-screen
-       bg-slate-800 text-gray-300'
+       bg-slate-800 text-gray-300 relative '
     >
       <div className='max-w-[950px] mx-auto px-8 flex flex-col justify-center mt-28 text-center'>
         <div className='mt-24'>
@@ -28,7 +29,7 @@ const Skills = () => {
           </p>
         </div>
 
-        {/* Technologies */}
+        {/* Tech stack */}
 
         <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center md:text-2xl md:mt-10'>
           <div className='hover:scale-125 duration-500'>
@@ -71,6 +72,11 @@ const Skills = () => {
             <img className='w-20 mx-auto' src={GitHub} alt='HTML icon' />
             <p className='my-4'>GitHub</p>
           </div>
+          <img
+            src={programming}
+            alt=''
+            className='absolute w-[40rem] opacity-20 top-56 right-64'
+          />
         </div>
       </div>
     </div>
