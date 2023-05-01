@@ -1,6 +1,7 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
+
 import codeTyping from '../assets/code-typing.svg';
 
 const Home = () => {

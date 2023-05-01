@@ -45,7 +45,11 @@ const Skills = () => {
             <p className='my-4'>Sass</p>
           </div>
           <div className='hover:scale-125 duration-500'>
-            <img className='w-20 mx-auto' src={TailwindCSS} alt='HTML icon' />
+            <img
+              className='w-20 mx-auto animate-bounce'
+              src={TailwindCSS}
+              alt='HTML icon'
+            />
             <p className='my-4'>Tailwind CSS</p>
           </div>
           <div className='hover:scale-125 duration-500'>
@@ -53,7 +57,11 @@ const Skills = () => {
             <p className='my-4'>JavaScript</p>
           </div>
           <div className='hover:scale-125 duration-500'>
-            <img className='w-20 mx-auto' src={ReactJS} alt='HTML icon' />
+            <img
+              className='w-20 mx-auto animate-spin'
+              src={ReactJS}
+              alt='HTML icon'
+            />
             <p className='my-4'>React JS</p>
           </div>
           <div className='hover:scale-125 duration-500'>

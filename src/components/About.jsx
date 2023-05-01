@@ -17,7 +17,7 @@ const About = () => {
             About Me
           </p>
         </div>
-        <div className='md:w-full lg:w-5/6 xl:w-1/2 grid sm:grid-cols-2 gap-8'>
+        <div className='md:w-full lg:w-5/6 xl:w-3/4 2xl:w-1/2 grid sm:grid-cols-2 gap-8'>
           <div className='sm:text-right text-lg md:text-2xl lg:text-4xl font-bold'>
             <p className='mb-4'>
               Nice to meet you and welcome on my page. Please take a look
@@ -81,7 +81,7 @@ const About = () => {
             <section className='text-[1.2rem] md:text-2xl lg:text-3xl text-gray-400'>
               <p>
                 I am a self-taught{' '}
-                <span className='text-pink-600'>Frontend Developer</span>. I've
+                <span className='text-pink-600'>Front-End Developer</span>. I've
                 decided I want to learn to code and completely change career for
                 the better.
               </p>{' '}

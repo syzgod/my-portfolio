@@ -74,7 +74,7 @@ const Contact = () => {
         <button
           type='submit'
           onClick={handleResetInputClick}
-          className='text-gray-100 border-2 px-4 py-3 my-8 mx-auto flex items-center md:text-2xl hover:shadow-xl hover:shadow-pink-600/50 group relative rounded-full'
+          className='text-gray-100 border-2 px-4 py-3 my-8 mx-auto flex items-center md:text-2xl hover:shadow-xl hover:shadow-pink-600/50 group relative rounded-full transition-all'
         >
           <span className='absolute right-0 left-0 flex h-0 mb-0 transition-all duration-300 ease-out transform bg-pink-700 group-hover:h-full opacity-90 rounded-full'></span>
           <span className='relative rounded-full'>Message Me</span>
