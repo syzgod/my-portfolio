@@ -6,7 +6,7 @@ import codeTyping from '../assets/code-typing.svg';
 const Home = () => {
   return (
     <div name='home' className='min-h-screen bg-slate-800 relative'>
-      <div className='relative max-w-[950px] mx-auto p-8 pt-24 md:pt-36 flex flex-col justify-center items-center md:items-start'>
+      <div className='relative max-w-[950px] mx-auto p-8 md:p-20 pt-24 md:pt-36 flex flex-col justify-center items-center md:items-start'>
         <img
           src={codeTyping}
           alt=''

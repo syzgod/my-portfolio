@@ -17,7 +17,7 @@ const About = () => {
             About Me
           </p>
         </div>
-        <div className='md:w-2/3 grid sm:grid-cols-2 gap-8'>
+        <div className='md:w-full lg:w-5/6 xl:w-1/2 grid sm:grid-cols-2 gap-8'>
           <div className='sm:text-right text-lg md:text-2xl lg:text-4xl font-bold'>
             <p className='mb-4'>
               Nice to meet you and welcome on my page. Please take a look
@@ -102,7 +102,7 @@ const About = () => {
           <img
             src={family}
             alt=''
-            className='w-full rounded-3xl shadow-slate-900 shadow-md'
+            className='max-w-full rounded-3xl shadow-slate-900 shadow-md'
           />
         </div>
       </div>
