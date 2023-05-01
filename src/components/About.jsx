@@ -11,7 +11,7 @@ const About = () => {
       name='about'
       className='w-full min-h-screen p-8 bg-slate-800 text-gray-300'
     >
-      <div className='flex flex-col justify-center items-center w-full h-full mt-20'>
+      <div className='flex flex-col justify-center items-center w-full h-full mt-16'>
         <div className='text-center pb-8 md:mb-16'>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl text-gray-100'>
             About Me
