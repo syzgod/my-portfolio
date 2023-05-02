@@ -88,7 +88,10 @@ const About = () => {
             </section>
           </div>
           <section className='text-[1.2rem] md:text-2xl lg:text-3xl text-gray-400'>
-            <h1 className='text-4xl my-3 text-pink-600 font-bold'>
+            <h1
+              data-taos-offset='100'
+              className='text-4xl my-3 text-pink-600 font-bold delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0'
+            >
               So why coding?
             </h1>{' '}
             <p>

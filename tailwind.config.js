@@ -6,6 +6,9 @@ module.exports = {
   ],
 
   theme: {
+    debugScreens: {
+      position: ['bottom', 'left'],
+    },
     extend: {
       animation: {
         spin: 'spin 20s linear infinite',
@@ -13,5 +16,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-brand-colors')],
+  plugins: [
+    require('tailwindcss-brand-colors'),
+    require('tailwindcss-debug-screens'),
+  ],
 };
