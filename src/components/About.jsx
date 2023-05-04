@@ -105,7 +105,7 @@ const About = () => {
           <img
             src={family}
             alt=''
-            className='max-w-full rounded-3xl shadow-slate-900 shadow-md'
+            className='max-w-full rounded-3xl shadow-slate-900 shadow-md transition-all duration-500 hover:-rotate-3 hover:scale-110 hover:shadow-xl hover:shadow-slate-900'
           />
         </div>
       </div>

@@ -20,13 +20,19 @@ const Home = () => {
         <h2 className='flex text-3xl md:text-5xl font-bold text-gray-900 bg-pink-600 w-fit'>
           I'm a Front-End Developer.
         </h2>
-        <p className='text-gray-400 py-4 text-2xl lg:text-3xl'>
-          My dream is becoming a full-time Front-end Developer so I can do more
-          what I love. I enjoy the process and the progress of learning new
-          technologies and using them for various tasks. I am passionate about
-          acquiring new skills which help me not just understand the
-          technologies better but also allowing me to be more efficient in what
-          I do.
+        <p className='text-gray-400 py-4 text-2xl lg:text-3xl z-50'>
+          My <span className='jumpOutText'>dream</span> is becoming a full-time
+          Front-end Developer so I can do more what I{' '}
+          <span className='jumpOutText'>love</span>. I{' '}
+          <span className='jumpOutText'>enjoy </span> the
+          <span className='jumpOutText'> process</span> and the{' '}
+          <span className='jumpOutText'>progress </span>
+          of <span className='jumpOutText'>learning </span> new technologies and
+          using them for various tasks. I am{' '}
+          <span className='jumpOutText'>passionate</span> about acquiring new{' '}
+          <span className='jumpOutText'>skills </span> which help me not just
+          understand the technologies better but also allowing me to be more{' '}
+          <span className='jumpOutText'>efficient</span> in what I do.
         </p>
         <div className='cursor-pointer flex justify-center items-center md:justify-start'>
           <Link
