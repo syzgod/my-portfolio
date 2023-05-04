@@ -22,7 +22,7 @@ const Contact = () => {
         action='https://getform.io/f/f51a54d9-2a95-4c81-8590-7b6ea5fb38c3'
         method='POST'
         encType='multipart/form-data'
-        className='flex flex-col max-w-[600px] w-full text-center mt-24'
+        className='flex flex-col max-w-[600px] w-full text-center mt-24 z-10'
       >
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-100 md:text-5xl'>
@@ -47,24 +47,38 @@ const Contact = () => {
             <div className='mt-5'>You can also Submit the form below:</div>
           </div>
         </div>
+        <label
+          htmlFor='senderName'
+          className='text-left ml-5 mt-3 text-slate-300'
+        >
+          Name
+        </label>
         <input
-          className='bg-gray-300 p-3 text-gray-800 md:text-2xl rounded-full'
+          className='bg-slate-200 p-3 text-slate-800 md:text-2xl rounded-full opacity-60 placeholder:text-slate-500 focus:bg-slate-300 focus:opacity-100'
           type='text'
           name='name'
-          placeholder='Name'
+          id='senderName'
+          placeholder='John Smith'
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        <label
+          htmlFor='senderEmail'
+          className='text-left ml-5 mt-3 text-slate-300'
+        >
+          E-mail address
+        </label>
         <input
-          className='my-4 p-3 bg-gray-300 text-gray-800 md:text-2xl rounded-full'
+          className='p-3 bg-slate-200 text-gray-800 md:text-2xl rounded-full opacity-60 placeholder:text-slate-500 focus:bg-slate-300 focus:opacity-100'
           type='email'
           name='email'
-          placeholder='Email'
+          id='senderEmail'
+          placeholder='johnsmith@email.com'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
-          className='bg-gray-300 p-3 text-gray-800 md:text-2xl rounded-3xl'
+          className='bg-slate-200 p-3 text-gray-800 md:text-2xl rounded-3xl opacity-60 placeholder:text-slate-500 focus:bg-slate-300 focus:opacity-100 mt-4'
           name='message'
           rows='5'
           placeholder='Message'
