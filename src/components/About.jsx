@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import family from '../assets/family.png';
 import { Link } from 'react-scroll';
 
@@ -102,7 +103,16 @@ const About = () => {
               want a break I love to play computer games or watch something.
             </p>
           </section>
-          <img
+          <motion.img
+            initial={{ scale: 0 }}
+            whileInView={
+              ({ rotate: 180, scale: 0.5 }, { rotate: 360, scale: 1 })
+            }
+            transition={{
+              type: 'fade',
+              stiffness: 260,
+              damping: 20,
+            }}
             src={family}
             alt=''
             className='max-w-full rounded-3xl shadow-slate-900 shadow-md transition-all duration-500 hover:-rotate-3 hover:scale-110 hover:shadow-xl hover:shadow-slate-900'

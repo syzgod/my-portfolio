@@ -154,7 +154,7 @@ const Navbar = () => {
           <li className='w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-violet-600 hover:shadow-slate-900 hover:shadow-lg rounded-r-full border-2'>
             <a
               className='flex justify-between items-center w-full text-gray-200'
-              href='https://www.dev-vik.tech/viktor_berczeli_ENG.pdf'
+              href='https://www.dev-vik.tech/ENG_viktor_berczeli_CV.pdf'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import programming from '../assets/programming-skills.svg';
 
 import HTML from '../assets/html.png';
@@ -13,6 +14,26 @@ import Git from '../assets/git.png';
 import GitHub from '../assets/github.png';
 
 const Skills = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.1,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div
       name='skills'
@@ -31,61 +52,96 @@ const Skills = () => {
 
         {/* Tech stack */}
 
-        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center md:text-2xl md:mt-10'>
-          <div className='hover:scale-125 duration-500 z-10'>
+        <motion.div
+          variants={container}
+          initial='hidden'
+          whileInView='visible'
+          className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center md:text-2xl md:mt-10'
+        >
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img className='w-20 mx-auto' src={HTML} alt='HTML icon' />
             <p className='my-4'>HTML</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img className='w-20 mx-auto' src={CSS} alt='HTML icon' />
             <p className='my-4'>CSS</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img className='w-20 mx-auto ' src={Sass} alt='HTML icon' />
             <p className='my-4'>Sass</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img
               className='w-20 mx-auto animate-bounce'
               src={TailwindCSS}
               alt='HTML icon'
             />
             <p className='my-4'>Tailwind CSS</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img className='w-20 mx-auto' src={JavaScript} alt='HTML icon' />
             <p className='my-4'>JavaScript</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img
               className='w-20 mx-auto animate-spin'
               src={ReactJS}
               alt='HTML icon'
             />
             <p className='my-4'>React JS</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img className='w-20 mx-auto' src={Redux} alt='HTML icon' />
             <p className='my-4'>Redux</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img className='w-20 mx-auto' src={TypeScript} alt='HTML icon' />
             <p className='my-4'>TypeScript</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img className='w-20 mx-auto' src={Git} alt='HTML icon' />
             <p className='my-4'>Git</p>
-          </div>
-          <div className='hover:scale-125 duration-500 z-10'>
+          </motion.div>
+          <motion.div
+            variants={item}
+            className='hover:scale-125 duration-500 z-10'
+          >
             <img className='w-20 mx-auto' src={GitHub} alt='HTML icon' />
             <p className='my-4'>GitHub</p>
-          </div>
-          <img
-            src={programming}
-            alt=''
-            className='absolute w-[30rem] lg:w-[40rem] opacity-10 md:top-36 right-10 md:right-64'
-          />
-        </div>
+          </motion.div>
+        </motion.div>
+        <img
+          src={programming}
+          alt=''
+          className='absolute w-[30rem] lg:w-[40rem] opacity-10 md:top-36 right-10 md:right-64'
+        />
       </div>
     </div>
   );
