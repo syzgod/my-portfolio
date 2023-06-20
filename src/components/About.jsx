@@ -13,11 +13,16 @@ const About = () => {
       className='w-full min-h-screen p-8 bg-slate-800 text-gray-300'
     >
       <div className='flex flex-col justify-center items-center w-full h-full mt-16'>
-        <div className='text-center pb-8 md:mb-16'>
+        <motion.div
+          initial={{ x: -1000, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1 }}
+          className='text-center pb-8 md:mb-16'
+        >
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 md:text-5xl text-gray-100'>
             About Me
           </p>
-        </div>
+        </motion.div>
         <div className='md:w-full lg:w-5/6 xl:w-3/4 2xl:w-1/2 grid sm:grid-cols-2 gap-8'>
           <div className='sm:text-right text-lg md:text-2xl lg:text-4xl font-bold'>
             <p className='mb-4'>

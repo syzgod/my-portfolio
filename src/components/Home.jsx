@@ -1,27 +1,46 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 
 import codeTyping from '../assets/code-typing.svg';
 
 const Home = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div name='home' className='min-h-screen bg-slate-800 relative'>
-      <div className='relative max-w-[950px] mx-auto p-8 md:p-20 pt-24 md:pt-36 flex flex-col justify-center items-center md:items-start'>
+    <div ref={ref} name='home' className='min-h-screen bg-slate-800 relative'>
+      <div
+        className='relative max-w-[950px] mx-auto p-8 md:p-20 pt-24 md:pt-36 flex flex-col justify-center items-center md:items-start'
+        style={{
+          transform: isInView ? 'none' : 'translateX(-200px)',
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+        }}
+      >
         <img
           src={codeTyping}
           alt=''
           className='absolute w-[35rem] md:w-[40rem] md:left-[20rem] md:top-48 xl:top-64 xl:left-[40rem] xl:w-[50rem] opacity-5 left-0'
         />
-        <p className='text-2xl text-pink-600 md:text-4xl'>Hi, my name is</p>
+        <p
+          style={{
+            transform: isInView ? 'none' : 'translateX(-200px)',
+            opacity: isInView ? 1 : 0,
+            transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+          className='text-2xl text-pink-600 md:text-4xl'
+        >
+          Hi, my name is
+        </p>
         <h1 className='text-4xl sm:text-6xl font-bold text-gray-100 mb-2'>
           Viktor Berczeli
         </h1>
         <h2 className='flex text-3xl md:text-5xl font-bold text-gray-900 bg-pink-600 w-fit'>
           I'm a Front-End Developer.
         </h2>
-        <p className='text-gray-400 py-4 text-2xl lg:text-3xl z-50'>
+        <p className='text-gray-400 py-4 text-2xl lg:text-3xl z-10'>
           My <span className='jumpOutText'>dream</span> is becoming a full-time
           Front-end Developer so I can do more what I{' '}
           <span className='jumpOutText'>love</span>. I{' '}
